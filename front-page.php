@@ -16,7 +16,7 @@ if ( $section->have_posts() ) :
 		    	$slug = $section->post_name;
 		    	?>
 		    	<section id='<?php echo "$slug" ?>'>
-		    	<?php get_template_part("t", "$slug");?>
+		    	<?php get_template_part("template", "$slug");?>
 		    	</section>
 
 <?php
