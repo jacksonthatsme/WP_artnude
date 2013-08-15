@@ -9,7 +9,7 @@ $args = array(
 );
 
 $section = new WP_Query( $args );
-// Open books loop
+// Open loop
 if ( $section->have_posts() ) :     
     while ($section->have_posts()) : $section->the_post() 
 	    foreach {
@@ -21,7 +21,7 @@ if ( $section->have_posts() ) :
 
 <?php
 }
-// Close books loop
+// Close loop
     endwhile;
 endif;
 ?>
