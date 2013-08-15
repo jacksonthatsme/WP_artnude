@@ -1,0 +1,55 @@
+header{
+	position: absolute;
+	bottom: 0px;
+	height: 70px;
+	width: 100%;
+	background-color: $lightgrey;
+}
+.container{
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 100px;
+	text-align: left;
+}
+section{
+	width: 100%;
+	padding-top: 68px;
+	 @include box-sizing(border-box);
+	&#top{
+		height: 100%;
+		width: 100%;
+		overflow:hidden;
+	}
+
+}
+.text-center{
+	text-align: center;
+}
+footer{
+	padding: 15px 0px;
+	font-family: $lato;
+	background-color: $purple;
+	color: $white;
+	font-weight: 100;
+	font-size: 14px;
+	.container{
+		text-align: center;
+	}
+	a{
+		color: $white;
+	}
+	& *{
+		display: inline-block;
+	}
+	.wp{
+		float: left;
+	}
+	.legal{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.credit{
+		float: right;
+	}
+}

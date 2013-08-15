@@ -1,0 +1,38 @@
+h1{
+	font-family: $montserrat;
+	font-size: 38px;
+	font-weight: 700;
+	padding-top: 32px;
+	background-image: url('images/marker.jpg');
+	background-position: top center;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding-bottom: 50px;
+}
+h2{
+	font-family: $lato;
+	font-weight: 100;
+	line-height: 48px;
+	font-size: 30px;
+}
+h3{
+	font-family: $lato;
+	font-size: 22px;
+	font-weight: 700;
+	margin-top: 20px;
+}
+p{
+	font-family: $lato;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 29px;
+	em{
+		font-weight: 700;
+	}
+	&+ p{
+		margin-top: 12px;
+	}
+	a{
+		@include text-link;
+	}
+}

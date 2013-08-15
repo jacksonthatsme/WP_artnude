@@ -1,0 +1,102 @@
+.tl-upcoming-item{
+	cursor: pointer;
+  display: block;
+  padding: 20px 15px;
+  border-top: 1px solid $lightgrey;
+  &:hover{
+    background-color: $lightgrey;
+    & .dropdown{
+	    transform:rotate(180deg);
+	    -ms-transform:rotate(180deg);
+	    -webkit-transform:rotate(180deg);
+	    -moz-transform:rotate(180deg);
+	    -o-transform:rotate(180deg);
+	    @include transition-duration;
+	    @include transition-origin;
+    }
+  }
+  &.on{
+	  background-color: $lightgrey;
+	  & .dropdown{
+		  transform:rotate(180deg);
+	    -ms-transform:rotate(180deg);
+	    -webkit-transform:rotate(180deg);
+	    -moz-transform:rotate(180deg);
+	    -o-transform:rotate(180deg);
+	  }
+  }
+  &:first-of-type{
+	  border-top: none;
+  }
+  & *{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .tl-upcoming-event-dates{
+    font-family: $lato;
+    font-size: 14px;
+    font-weight: 900;
+    color: $pink;
+    letter-spacing: 1px;
+  }
+  .tl-upcoming-event-title{
+    font-family: $montserrat;
+    font-size: 21px;
+    color: $darkgrey;
+    padding-left: 60px;
+    text-align:  right;
+  }
+  .tl-upcoming-item-control{
+    float: right;
+  }
+  .tl-upcoming-button-buy{
+    @include btn;
+    cursor: pointer;
+    font-family: $lato;
+    font-size: 14px;
+    font-weight: 900;
+    color: $pink;
+    background-color: #fffefa;
+    margin-top: -3px;
+  }
+  .dropdown{
+    float: right;
+    display: inline-block;
+    background-color: white;
+    @include transition-duration;
+    @include transition-origin;
+    width: 23px;
+    height: 23px;
+    background-image: url('images/dropdown.png');
+    background-position: center center;
+    margin-left: 10px;
+    border-radius: 12px;
+    background-repeat: no-repeat;
+  }
+}
+.dropdown-container{
+	padding: 0 15px 30px;
+	
+	.event-info{
+		text-align: center;
+		padding: 20px 0px;
+		color: $medgrey;
+		font-weight: 700;
+		font-family: $lato;
+		font-size: 14px;
+		letter-spacing: 1px;
+		& *{
+			display: inline-block;
+		}
+		div.time{
+			float: left;
+		}
+		div.venue{
+			margin-left: auto;
+			margin-right: auto;
+		}
+		div.location{
+			float: right;
+		}
+	}
+}

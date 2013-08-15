@@ -1,0 +1,99 @@
+/* =Reset
+-------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+li{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+.clear{
+	clear: both;
+	margin: 0px;
+}
+/* =Reset
+-------------------------------------------------------------- */
+
+/*======= Global Variables =======*/
+$darkgrey: #333333;
+$medgrey: #b7b7b7;
+$lightgrey: #edede9;
+$pink: #eb2c7b;
+$purple: #5b2e8c;
+$montserrat: 'Montserrat', sans-serif;
+$lato: 'Lato', sans-serif;
+$white: #ffffff;
+
+
+/*======= Mixins =======*/
+@mixin text-link{
+	border-bottom: dotted 1px $purple;
+	color: inherit;
+}
+@mixin btn-gradient{
+	background: #fffefa; /* Old browsers */
+background: -moz-linear-gradient(top,  #fffefa 0%, #edede9 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fffefa), color-stop(100%,#edede9)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #fffefa 0%,#edede9 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #fffefa 0%,#edede9 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #fffefa 0%,#edede9 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #fffefa 0%,#edede9 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffefa', endColorstr='#edede9',GradientType=0 ); /* IE6-9 */
+
+}
+@mixin btn{
+	padding: 6px 10px 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 8px;
+	border-color: $medgrey;
+	width: intrinsic;
+	display: block;
+	&:hover{
+		@include btn-gradient;
+		box-shadow: 0px 0px 15px 1px $white;
+	}
+}
+@mixin transition-duration{
+	transition-duration: .3s;
+	-webkit-transition-duration: .3s;
+	-ms-transition-duration: .3s;
+	-moz-transition-duration: .3s;
+	-o-transition-duration: .3s;
+}
+@mixin transition-origin{
+	transform-origin: 51% 50%;
+	-webkit-transform-origin: 51% 50%;
+	-moz-transform-origin: 51% 50%;
+	-o-transform-origin: 51% 50%;
+	-ms-transform-origin: 51% 50%;
+}
+
+html,body{
+	width: 100%;
+	height: 100%;
+}
+body {
+	margin: 0px auto;
+	text-align: center;
+	background-color: #fffefa;
+	color: $darkgrey;
+}

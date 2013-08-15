@@ -1,0 +1,24 @@
+/*!
+Theme Name: ARTnude Philly
+Theme URI: http://artnudephilly.com
+Description: A custom wordpress theme for ARTnude Philly
+Author: Jackson Lynch
+Author URI: http://jacksonthatsme.com
+Version:1.0
+Tags: personal, custom-fields, custom-post-types, single column, portfolio
+
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,700,900,300italic|Montserrat:400,700);
+@import "compass/css3";
+@import "base";
+@import "grid";
+@import "typography";
+@import "layout";
+@import "module";
+@import "state";
+@import "flexslider";
+@import "ticketleap";
+@import "responsive";

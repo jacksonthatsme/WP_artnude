@@ -1,0 +1,39 @@
+.flexslider{
+	margin-top: 20px;
+	max-height: 0px;
+
+	.flex-viewport{
+		overflow: visible !important;
+		width: 100%;
+		max-height: 550px;
+	}
+	.flex-direction-nav {
+		a  { 
+			display: block; 
+			width: 46px; 
+			height: 125px; 
+			position: relative; 
+			top: -320px; 
+			z-index: 10; 
+			cursor: pointer; 
+			background-color: $pink;
+		}
+		.flex-prev {
+			 float: left;
+			 left: -23px;
+			 background-image: url('images/leftarrow.png');
+			 background-position: center center; 
+			 background-repeat: no-repeat;
+		}
+		.flex-next {
+			float: right;
+			right:-23px;
+			background-image: url('images/rightarrow.png');
+			background-position: center center; 
+			background-repeat: no-repeat;
+		}
+	}
+	.flexslider-img {
+		margin: 0px;
+	}
+}
